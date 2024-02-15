@@ -98,7 +98,7 @@
         card.innerHTML = `
           <div class="card-body">
             <h5 class="card-title">${sanitize(repo.name)}</h5>
-            <strong>Created by User:</strong> ${repoDetails.owner.login === githubUsername ? 'Created' : 'Forked'}<br>
+            <strong>Repo Type:</strong> ${repoDetails.owner.login === githubUsername ? 'Created' : 'Forked'}<br>
             <strong>Language:</strong> ${sanitize(repoDetails.language || 'N/A')}<br>
             <strong>Repository:</strong> <a href="${sanitize(repoDetails.html_url)}" target="_blank">Repository</a><br>
             <strong>Homepage:</strong> <a href="${sanitize(repoDetails.homepage)}" target="_blank">${sanitize(repoDetails.homepage)}</a><br>
